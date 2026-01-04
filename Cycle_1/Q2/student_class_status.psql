@@ -1,0 +1,4 @@
+CREATE TABLE student_class_status(
+classStatus bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+classDescription text
+);
