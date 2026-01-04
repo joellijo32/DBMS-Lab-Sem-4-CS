@@ -1,0 +1,5 @@
+CREATE TABLE faculty_categories(
+staffID bigint REFERENCES staff (staffID), 
+categoryID bigint REFERENCES categories (categoryID), 
+PRIMARY KEY (staffID, categoryID)
+);

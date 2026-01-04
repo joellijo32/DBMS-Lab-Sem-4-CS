@@ -1,5 +1,5 @@
 CREATE TABLE categories(
-categoryid bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+categoryID bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 categoryDescription text, 
 departmentID bigint
 );
