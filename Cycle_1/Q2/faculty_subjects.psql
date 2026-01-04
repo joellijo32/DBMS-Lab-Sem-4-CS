@@ -1,0 +1,6 @@
+CREATE TABLE faculty_subjects(
+staffID bigint REFERENCES staff (staffID), 
+subjectID bigint REFERENCES subjects (subjectId), 
+proficiencyRating int, 
+PRIMARY KEY (staffID, subjectID)
+);
