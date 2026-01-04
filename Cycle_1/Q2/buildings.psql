@@ -1,0 +1,5 @@
+CREATE TABLE buildings(
+buildingCode bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+buildingName text, 
+numberofFloors int
+);
