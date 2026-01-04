@@ -1,0 +1,6 @@
+CREATE TABLE faculty(
+staffID bigint REFERENCES staff (staffID) UNIQUE NOT NULL,
+title text, 
+status text, 
+tenured date
+);
