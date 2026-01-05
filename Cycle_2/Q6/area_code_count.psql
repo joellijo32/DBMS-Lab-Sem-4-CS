@@ -1,0 +1,3 @@
+SELECT stfareacode, COUNT(*)
+FROM staff
+GROUP BY stfareacode;
