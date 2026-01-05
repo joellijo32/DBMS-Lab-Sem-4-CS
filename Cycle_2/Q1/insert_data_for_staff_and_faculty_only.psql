@@ -1,14 +1,14 @@
 INSERT INTO staff 
 (stffirstname, stflastname, stfstreetaddress, stfcity, stfstate, stfzipcode, stfareacode, stfphonenumber, joiningdate, salary, position) 
 VALUES
-('Ajeesh', 'Ramanujan', 'Cherthala', 'Alapuzha', 'Kerala', 681537, 471, '9274138846', '2028-03-11', 115000, 'HOD'), 
-('Narasimhan', 'T', 'Kottackal', 'Kollam', 'Kerala', 661273, 382, '6231045571', '2026-07-26', 63000, 'Lecturer'), 
-('Neeti', 'Mohan', 'Ullor', 'Trivandrum', 'Kerala', 686271, 551, '9943217897', '2026-10-17', 50000, 'Lecturer'); 
+('Ajeesh', 'Ramanujan', 'Cherthala', 'Alapuzha', 'Kerala', 681537, 471, '9274138846', '2015-03-11', 115000, 'HOD'), 
+('Narasimhan', 'T', 'Kottackal', 'Kollam', 'Kerala', 661273, 382, '6231045571', '2019-07-26', 63000, 'Lecturer'), 
+('Neeti', 'Mohan', 'Ullor', 'Trivandrum', 'Kerala', 686271, 551, '9943217897', '2020-10-17', 50000, 'Lecturer'); 
 
 INSERT INTO faculty
 (staffid, title, status, tenured) VALUES
-(1, 'Prof.', 'Full-time', '2022-03-12'), 
-(2, 'Ad hoc', 'Full-time', '2023-06-27'), 
-(3, 'Asst. Prof.', 'Part-time', '2022-10-18'); 
+(1, 'Prof.', 'Full-time', '2028-03-12'), 
+(2, 'Ad hoc', 'Full-time', '2026-06-27'), 
+(3, 'Asst. Prof.', 'Part-time', '2026-10-18'); 
 
 
