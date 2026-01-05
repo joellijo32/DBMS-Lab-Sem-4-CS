@@ -1,0 +1,5 @@
+SELECT staff.staffid, 
+	(tenured - CURRENT_DATE)/365 AS 'Remaining Tenure', 
+	tenured
+FROM staff, faculty
+WHERE staff.staffid = faculty.staffid ;
