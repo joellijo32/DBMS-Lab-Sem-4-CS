@@ -1,0 +1,3 @@
+SELECT position, COUNT (*)
+FROM staff
+GROUP BY position; 
