@@ -2,7 +2,7 @@ INSERT INTO staff
 (stffirstname, stflastname, stfstreetaddress, stfcity, stfstate, stfzipcode, stfareacode, stfphonenumber, joiningdate, salary, position) 
 VALUES
 ('Ajeesh', 'Ramanujan', 'Cherthala', 'Alapuzha', 'Kerala', 681537, 471, '9274138846', '2020-03-11', 115000, 'HOD'), 
-('Narasimhan', 'T', "Kottackal', 'Kollam', 'Kerala', 661273, 382, '6231045571', '2021-07-26', 63000, 'Lecturer'), 
+('Narasimhan', 'T', 'Kottackal', 'Kollam', 'Kerala', 661273, 382, '6231045571', '2021-07-26', 63000, 'Lecturer'), 
 ('Neeti', 'Mohan', 'Ullor', 'Trivandrum', 'Kerala', 686271, 551, '9943217897', '2021-10-17', 50000, 'Lecturer'); 
 
 INSERT INTO faculty
