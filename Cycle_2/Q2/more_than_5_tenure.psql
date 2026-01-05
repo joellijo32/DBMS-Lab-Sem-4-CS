@@ -1,4 +1,4 @@
-SELECT staff.staffid,title, stffirstname,stflastname, status, tenured
+SELECT staff.staffid,title, stffirstname,stflastname, status, joiningdate,tenured
 FROM staff, faculty
 WHERE staff.staffid = faculty.staffid
 AND EXTRACT(
