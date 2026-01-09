@@ -1,198 +1,155 @@
-INSERT INTO buildings (buildingname, numberoffloors) VALUES 
-('Ramanujan Block', 4),
-('Visvesvaraya Hall', 5),
-('Kalam Science Block', 3),
-('Bhabha Research Wing', 6),
-('Sarabhai Center', 4),
-('Aryabhatta Complex', 5),
-('Turing Lab', 3),
-('Tesla Power House', 2),
-('Curie Chemistry Block', 4),
-('Newton Mechanics Hall', 3),
-('Ada Lovelace IT Park', 7),
-('Faraday Electrical Wing', 4),
-('Shannon Communication Lab', 3),
-('Von Neumann Center', 5),
-('Zaha Hadid Architecture Block', 4);
+INSERT INTO staff
+(stffirstname, stflastname, stfstreetaddress, stfcity, stfstate,
+ stfzipcode, stfareacode, stfphonenumber, joiningdate, salary, position)
+VALUES
+('Anil','Kumar','Street 1','Kochi','Kerala',682001,484,'9876543210','2016-01-10',45000,'Professor'),
+('Meera','Nair','Street 2','Trivandrum','Kerala',695001,471,'9876543211','2017-03-12',38000,'Lecturer'),
+('Ravi','Menon','Street 3','Calicut','Kerala',673001,495,'9876543212','2018-06-15',30000,'Assistant Professor'),
+('Suresh','Das','Street 4','Thrissur','Kerala',680001,487,'9876543213','2019-08-20',28000,'Lecturer'),
+('Neha','Singh','Street 5','Delhi','Delhi',110001,11,'9876543214','2015-02-01',52000,'Professor'),
+('Amit','Sharma','Street 6','Noida','Uttar Pradesh',201301,120,'9876543215','2016-09-11',47000,'Professor'),
+('Pooja','Verma','Street 7','Bhopal','Madhya Pradesh',462001,755,'9876543216','2017-12-25',34000,'Lecturer'),
+('Kiran','Patel','Street 8','Ahmedabad','Gujarat',380001,79,'9876543217','2018-04-18',29000,'Assistant Professor'),
+('Ramesh','Rao','Street 9','Bangalore','Karnataka',560001,80,'9876543218','2016-07-09',51000,'Professor'),
+('Divya','Iyer','Street 10','Chennai','Tamil Nadu',600001,44,'9876543219','2019-10-05',36000,'Lecturer'),
+('Sunil','Joshi','Street 11','Pune','Maharashtra',411001,20,'9876543220','2017-01-17',42000,'Assistant Professor'),
+('Anita','Roy','Street 12','Kolkata','West Bengal',700001,33,'9876543221','2018-11-30',39000,'Lecturer'),
+('Vikas','Malhotra','Street 13','Gurgaon','Haryana',122001,124,'9876543222','2015-05-14',55000,'Professor'),
+('Lakshmi','Menon','Street 14','Alappuzha','Kerala',688001,477,'9876543223','2020-02-02',27000,'Lecturer'),
+('Arun','Pillai','Street 15','Kottayam','Kerala',686001,481,'9876543224','2021-06-21',25000,'Teaching Assistant');
 
+INSERT INTO faculty (staffid, title, status, tenured)
+VALUES
+(1,'Prof.','Permanent','2030-01-01'),
+(2,'Dr.','Permanent','2029-03-01'),
+(3,'Dr.','Permanent','2028-06-01'),
+(4,'Mr.','Contract','2026-08-01'),
+(5,'Prof.','Permanent','2031-02-01'),
+(6,'Prof.','Permanent','2030-09-01'),
+(7,'Ms.','Contract','2027-12-01'),
+(8,'Dr.','Permanent','2028-04-01'),
+(9,'Prof.','Permanent','2031-07-01'),
+(10,'Ms.','Contract','2026-10-01'),
+(11,'Dr.','Permanent','2029-01-01'),
+(12,'Ms.','Contract','2027-11-01'),
+(13,'Prof.','Permanent','2032-05-01'),
+(14,'Ms.','Contract','2026-02-01'),
+(15,'Mr.','Contract','2025-06-01');
 
-INSERT INTO categories (categorydescription, departmentid) VALUES 
-('Computer Science', 101),
-('Electronics & Comm', 102),
-('Mechanical Engg', 103),
-('Civil Engineering', 104),
-('Electrical & Electronics', 105),
-('Information Technology', 106),
-('Artificial Intelligence', 107),
-('Cyber Security', 108),
-('Biotechnology', 109),
-('Chemical Engineering', 110),
-('Mathematics Dept', 111),
-('Physics Dept', 112),
-('Humanities', 113),
-('Robotics', 114),
-('Data Science', 115);
+INSERT INTO categories (categorydescription, departmentid)
+VALUES
+('Computer Science',101),
+('Electronics',102),
+('Mechanical',103),
+('Civil',104),
+('Electrical',105),
+('Information Technology',106),
+('Artificial Intelligence',107),
+('Data Science',108),
+('Robotics',109),
+('Physics',110),
+('Mathematics',111),
+('Chemistry',112),
+('Biotechnology',113),
+('Architecture',114),
+('Management',115);
 
+INSERT INTO subjects (categoryid, subjectcode, subjectname)
+VALUES
+(1,101,'Data Structures'),
+(1,102,'Operating Systems'),
+(2,201,'Digital Electronics'),
+(2,202,'VLSI Design'),
+(3,301,'Thermodynamics'),
+(4,401,'Structural Analysis'),
+(5,501,'Power Systems'),
+(6,601,'Web Technologies'),
+(7,701,'Machine Learning'),
+(8,801,'Big Data Analytics'),
+(9,901,'Industrial Robotics'),
+(10,1001,'Quantum Physics'),
+(11,1101,'Linear Algebra'),
+(12,1201,'Organic Chemistry'),
+(13,1301,'Genetic Engineering');
 
-INSERT INTO student_class_status (classdescription) VALUES 
-('Registered'),
-('Attending'),
-('Shortage of Attendance'),
-('Condonation Required'),
-('Debarred'),
-('Course Completed'),
-('Withdrawn'),
-('Dropped'),
-('Grade Pending'),
-('Supplementary'),
-('Audit Only'),
-('Thesis Submitted'),
-('Internship Break'),
-('Exchange Program'),
-('Medical Leave');
+INSERT INTO faculty_subjects (staffid, subjectid, proficiencyrating)
+VALUES
+(1,1,9),(2,2,8),(3,3,7),(4,4,6),(5,5,9),
+(6,6,8),(7,7,7),(8,8,8),(9,9,9),(10,10,6),
+(11,11,8),(12,12,7),(13,13,9),(14,14,6),(15,15,5);
 
+INSERT INTO buildings (buildingname, numberoffloors)
+VALUES
+('Computer Science Block',4),
+('Electronics Block',5),
+('Mechanical Block',3),
+('Civil Block',4),
+('Electrical Block',5),
+('IT Block',6),
+('AI Block',3),
+('Data Science Block',4),
+('Robotics Block',2),
+('Physics Block',3),
+('Mathematics Block',4),
+('Chemistry Block',3),
+('Biotechnology Block',2),
+('Architecture Block',5),
+('Management Block',4);
 
-INSERT INTO staff (stffirstname, stflastname, stfstreetaddress, stfcity, stfstate, stfzipcode, stfareacode, stfphonenumber, joiningdate, salary, position) VALUES 
-('Suresh', 'Menon', 'MG Road', 'Trivandrum', 'Kerala', 695001, 471, '9847012345', '2015-06-01', 85000, 'Professor'),
-('Anjali', 'Nair', 'Kowdiar', 'Trivandrum', 'Kerala', 695003, 471, '9847012346', '2018-08-15', 62000, 'Associate Professor'),
-('Rahul', 'Iyer', 'Vyttila', 'Kochi', 'Kerala', 682019, 484, '9847012347', '2020-01-10', 45000, 'Lecturer'),
-('Deepa', 'Thomas', 'Edapally', 'Kochi', 'Kerala', 682024, 484, '9847012348', '2012-03-22', 92000, 'Professor'),
-('George', 'Mathew', 'Thiruvalla', 'Pathanamthitta', 'Kerala', 689101, 469, '9847012349', '2019-07-01', 55000, 'Assistant Professor'),
-('Lakshmi', 'Pillai', 'Chinnakada', 'Kollam', 'Kerala', 691001, 474, '9847012350', '2016-11-05', 70000, 'Associate Professor'),
-('Mohammed', 'Faizal', 'Mavoor Road', 'Kozhikode', 'Kerala', 673001, 495, '9847012351', '2021-09-12', 42000, 'Lecturer'),
-('Priya', 'Warrier', 'Fort Kochi', 'Kochi', 'Kerala', 682001, 484, '9847012352', '2014-05-30', 88000, 'Professor'),
-('Arjun', 'Rao', 'Manipal', 'Udupi', 'Karnataka', 576104, 820, '9847012353', '2017-02-14', 60000, 'Associate Professor'),
-('Kavya', 'Madhavan', 'Aluva', 'Ernakulam', 'Kerala', 683101, 484, '9847012354', '2022-06-20', 40000, 'Lecturer'),
-('Robert', 'Fernandez', 'Beach Road', 'Alleppey', 'Kerala', 688001, 477, '9847012355', '2013-12-01', 95000, 'Professor'),
-('Sneha', 'Reddy', 'Hitech City', 'Hyderabad', 'Telangana', 500081, 040, '9847012356', '2018-04-18', 58000, 'Assistant Professor'),
-('Unni', 'Krishnan', 'Palakkad Town', 'Palakkad', 'Kerala', 678001, 491, '9847012357', '2023-01-05', 38000, 'Teaching Assistant'),
-('Meera', 'Jasmine', 'Thirunakkara', 'Kottayam', 'Kerala', 686001, 481, '9847012358', '2015-10-25', 65000, 'Associate Professor'),
-('Vipin', 'Das', 'Thrissur Round', 'Thrissur', 'Kerala', 680001, 487, '9847012359', '2020-11-15', 47000, 'Lecturer');
+INSERT INTO classrooms (buildingcode, phoneavailable)
+VALUES
+(1,false),(2,true),(3,false),(4,true),(5,false),
+(6,true),(7,true),(8,false),(9,true),(10,false),
+(11,true),(12,false),(13,true),(14,false),(15,true);
 
+INSERT INTO classes (subjectid, classroomid, starttime, duration)
+VALUES
+(1,1,'08:00:00',60),(2,2,'09:00:00',45),(3,3,'10:00:00',50),
+(4,4,'11:00:00',40),(5,5,'12:00:00',55),(6,6,'13:00:00',60),
+(7,7,'14:00:00',45),(8,8,'15:00:00',50),(9,9,'08:30:00',40),
+(10,10,'09:30:00',60),(11,11,'10:30:00',45),(12,12,'11:30:00',50),
+(13,13,'12:30:00',55),(14,14,'13:30:00',40),(15,15,'14:30:00',60);
 
-INSERT INTO students (studfirstname, studlastname, studstreetaddress, studcity, studstate, studzipcode, studareacode, studphonenumber) VALUES 
-('Adithya', 'Varma', 'Skyline Apts', 'Kochi', 'Kerala', 682020, 484, '9995551001'),
-('Fathima', 'Beevi', 'Near Mosque', 'Malappuram', 'Kerala', 676505, 483, '9995551002'),
-('Joseph', 'Kurian', 'River View', 'Kottayam', 'Kerala', 686002, 481, '9995551003'),
-('Gouri', 'Nandana', 'Temple Rd', 'Trivandrum', 'Kerala', 695004, 471, '9995551004'),
-('Kiran', 'Kumar', 'Indira Nagar', 'Bangalore', 'Karnataka', 560038, 080, '9995551005'),
-('Namitha', 'Pramod', 'West Hill', 'Kozhikode', 'Kerala', 673005, 495, '9995551006'),
-('Ebin', 'Philip', 'Kanjikuzhy', 'Kottayam', 'Kerala', 686004, 481, '9995551007'),
-('Swathi', 'Krishna', 'Mannuthy', 'Thrissur', 'Kerala', 680651, 487, '9995551008'),
-('Vishnu', 'Prasad', 'Payyanur', 'Kannur', 'Kerala', 670307, 497, '9995551009'),
-('Sandra', 'Thomas', 'Thodupuzha', 'Idukki', 'Kerala', 685584, 486, '9995551010'),
-('Akhil', 'Raj', 'Punalur', 'Kollam', 'Kerala', 691305, 475, '9995551011'),
-('Riya', 'Sen', 'Salt Lake', 'Kolkata', 'WB', 700091, 033, '9995551012'),
-('Balu', 'Varghese', 'Angamaly', 'Ernakulam', 'Kerala', 683572, 484, '9995551013'),
-('Keerthy', 'Suresh', 'Besant Nagar', 'Chennai', 'TN', 600090, 044, '9995551014'),
-('Manu', 'Pillai', 'Karamana', 'Trivandrum', 'Kerala', 695002, 471, '9995551015');
+INSERT INTO faculty_classes (staffid, classid)
+VALUES
+(1,1),(2,2),(3,3),(4,4),(5,5),
+(6,6),(7,7),(8,8),(9,9),(10,10),
+(11,11),(12,12),(13,13),(14,14),(15,15);
 
+INSERT INTO students
+(studfirstname, studlastname, studstreetaddress, studcity, studstate,
+ studzipcode, studareacode, studphonenumber)
+VALUES
+('Rahul','Nair','S1','Kochi','Kerala',682001,484,'9786543210'),
+('Asha','Menon','S2','Trivandrum','Kerala',695001,471,'9786543211'),
+('Karthik','R','S3','Chennai','Tamil Nadu',600001,44,'9786543212'),
+('Neethu','P','S4','Calicut','Kerala',673001,495,'9786543213'),
+('Arjun','S','S5','Bangalore','Karnataka',560001,80,'9786543214'),
+('Sneha','M','S6','Pune','Maharashtra',411001,20,'9786543215'),
+('Vishal','K','S7','Delhi','Delhi',110001,11,'9786543216'),
+('Anu','T','S8','Thrissur','Kerala',680001,487,'9786543217'),
+('Rohit','G','S9','Noida','Uttar Pradesh',201301,120,'9786543218'),
+('Divya','I','S10','Chennai','Tamil Nadu',600001,44,'9786543219'),
+('Sanjay','R','S11','Kolkata','West Bengal',700001,33,'9786543220'),
+('Megha','J','S12','Bhopal','Madhya Pradesh',462001,755,'9786543221'),
+('Nikhil','P','S13','Kottayam','Kerala',686001,481,'9786543222'),
+('Pavithra','S','S14','Alappuzha','Kerala',688001,477,'9786543223'),
+('Akash','V','S15','Palakkad','Kerala',678001,491,'9786543224');
 
-INSERT INTO faculty (staffid, title, status, tenured) VALUES 
-(1, 'Dr.', 'Tenured', '2018-06-01'),
-(2, 'Dr.', 'Tenured', '2021-08-15'),
-(3, 'Mr.', 'Probation', NULL),
-(4, 'Dr.', 'Tenured', '2015-03-22'),
-(5, 'Mr.', 'Probation', NULL),
-(6, 'Mrs.', 'Tenured', '2019-11-05'),
-(7, 'Mr.', 'Contract', NULL),
-(8, 'Dr.', 'Tenured', '2017-05-30'),
-(9, 'Dr.', 'Tenured', '2020-02-14'),
-(10, 'Mrs.', 'Probation', NULL),
-(11, 'Dr.', 'Tenured', '2016-12-01'),
-(12, 'Mrs.', 'Contract', NULL),
-(13, 'Mr.', 'Temporary', NULL),
-(14, 'Mrs.', 'Tenured', '2018-10-25'),
-(15, 'Mr.', 'Probation', NULL);
+INSERT INTO student_class_status (classdescription)
+VALUES
+('Enrolled'),('Completed'),('Dropped'),('On Hold'),('Failed'),
+('Passed'),('Re-Exam'),('Transferred'),('Suspended'),('Withdrawn'),
+('Completed with Distinction'),('Audit'),('Incomplete'),('Deferred'),('Repeat');
 
+INSERT INTO student_schedules (classid, studentid, classstatus, grade)
+VALUES
+(1,1,1,75),(2,2,2,68),(3,3,6,82),(4,4,1,55),(5,5,6,90),
+(6,6,1,60),(7,7,3,45),(8,8,6,88),(9,9,1,72),(10,10,2,65),
+(11,11,6,80),(12,12,1,70),(13,13,6,92),(14,14,4,50),(15,15,1,58);
 
-INSERT INTO subjects (categoryid, subjectcode, subjectname) VALUES 
-(1, 101, 'Data Structures'),
-(2, 102, 'Digital Logic Design'),
-(3, 103, 'Fluid Mechanics'),
-(4, 104, 'Structural Analysis'),
-(5, 105, 'Power Systems'),
-(6, 106, 'Cloud Computing'),
-(7, 107, 'Neural Networks'),
-(8, 108, 'Ethical Hacking'),
-(9, 109, 'Genetics'),
-(10, 110, 'Thermodynamics'),
-(11, 111, 'Linear Algebra'),
-(12, 112, 'Quantum Physics'),
-(13, 113, 'Professional Ethics'),
-(14, 114, 'Mechatronics'),
-(15, 115, 'Big Data Analytics');
-
-
-INSERT INTO classrooms (buildingcode, phoneavailable) VALUES 
-(1, 'Yes'),
-(2, 'No'),
-(3, 'Yes'),
-(4, 'Yes'),
-(5, 'No'),
-(6, 'Yes'),
-(7, 'Yes'),
-(8, 'No'),
-(9, 'Yes'),
-(10, 'No'),
-(11, 'Yes'),
-(12, 'No'),
-(13, 'Yes'),
-(14, 'Yes'),
-(15, 'Yes');
-
-
-INSERT INTO classes (subjectid, classroomid, starttime, duration) VALUES 
-(1, 1, '09:00:00', 60),
-(2, 2, '10:00:00', 60),
-(3, 3, '11:00:00', 60),
-(4, 4, '13:00:00', 90),
-(5, 5, '14:30:00', 60),
-(6, 6, '09:00:00', 120),
-(7, 7, '11:00:00', 60),
-(8, 8, '10:00:00', 90),
-(9, 9, '13:30:00', 60),
-(10, 10, '15:00:00', 60),
-(11, 11, '08:30:00', 60),
-(12, 12, '09:30:00', 90),
-(13, 13, '11:30:00', 60),
-(14, 14, '14:00:00', 120),
-(15, 15, '16:00:00', 60);
-
-
-INSERT INTO faculty_subjects (staffid, subjectid, proficiencyrating) VALUES 
-(1, 1, 9), (2, 2, 8), (3, 3, 7), (4, 4, 10), (5, 5, 6),
-(6, 6, 9), (7, 7, 8), (8, 8, 9), (9, 9, 7), (10, 10, 8),
-(11, 11, 10), (12, 12, 7), (13, 13, 6), (14, 14, 9), (15, 15, 8);
-
-
-INSERT INTO faculty_classes (staffid, classid) VALUES 
-(1, 1), (2, 2), (3, 3), (4, 4), (5, 5),
-(6, 6), (7, 7), (8, 8), (9, 9), (10, 10),
-(11, 11), (12, 12), (13, 13), (14, 14), (15, 15);
-
-
-INSERT INTO faculty_categories (staffid, categoryid) VALUES 
-(1, 1), (2, 2), (3, 3), (4, 4), (5, 5),
-(6, 6), (7, 7), (8, 8), (9, 9), (10, 10),
-(11, 11), (12, 12), (13, 13), (14, 14), (15, 15);
-
-
-INSERT INTO student_schedules (classid, studentid, classstatus, grade) VALUES 
-(1, 1, 1, 85),
-(2, 2, 2, 78),
-(3, 3, 1, 92),
-(4, 4, 1, 65),
-(5, 5, 3, 40),
-(6, 6, 1, 88),
-(7, 7, 2, 72),
-(8, 8, 1, 90),
-(9, 9, 1, 55),
-(10, 10, 2, 81),
-(11, 11, 1, 77),
-(12, 12, 4, 60),
-(13, 13, 1, 95),
-(14, 14, 2, 83),
-(15, 15, 1, 70);
-
-
+INSERT INTO faculty_categories (staffid, categoryid)
+VALUES
+(1,1),(2,2),(3,3),(4,4),(5,5),
+(6,6),(7,7),(8,8),(9,9),(10,10),
+(11,11),(12,12),(13,13),(14,14),(15,15);
