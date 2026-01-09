@@ -1,7 +1,0 @@
-CREATE TABLE classes(
-classID bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
-subjectID bigint REFERENCES subjects (subjectID), 
-classroomID bigint REFERENCES classrooms (classroomID), 
-startTime time, 
-duration int
-);

@@ -1,5 +1,0 @@
-CREATE TABLE faculty_classes(
-staffID bigint REFERENCES staff (staffID), 
-classID bigint REFERENCES classes (classID), 
-PRIMARY KEY (staffID, classID)
-);

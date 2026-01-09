@@ -1,5 +1,0 @@
-CREATE TABLE categories(
-categoryID bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-categoryDescription text, 
-departmentID bigint
-);

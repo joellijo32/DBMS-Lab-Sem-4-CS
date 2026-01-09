@@ -1,7 +1,0 @@
-CREATE TABLE student_schedules(
-classID bigint REFERENCES classes (classID), 
-studentID bigint REFERENCES students (studentID), 
-classStatus bigint REFERENCES student_class_status (classStatus), 
-grade int, 
-PRIMARY KEY (classID, studentID)
-);

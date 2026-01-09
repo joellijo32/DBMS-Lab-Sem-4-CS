@@ -1,5 +1,0 @@
-CREATE TABLE classrooms(
-classroomID bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
-buildingCode bigint REFERENCES buildings (buildingCode), 
-phoneAvailable text
-);

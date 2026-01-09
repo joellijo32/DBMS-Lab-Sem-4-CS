@@ -1,7 +1,0 @@
-CREATE TABLE subjects(
-subjectID bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
-categoryID bigint REFERENCES categories (categoryID), 
-subjectCode int, 
-subjectName text, 
-subjectDescription text
-);
