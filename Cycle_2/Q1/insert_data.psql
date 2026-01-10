@@ -1,21 +1,17 @@
-
+TRUNCATE TABLE student_schedules, faculty_classes, classes, faculty_subjects, faculty_categories, subjects, categories, classrooms, buildings, faculty, students, staff, student_class_status RESTART IDENTITY CASCADE;
 
 INSERT INTO STAFF (stfFirstName, stfLastName, stfStreetAddress, stfCity, stfState, stfZipCode, stfAreaCode, stfPhoneNumber, joiningDate, salary, position) VALUES 
-('James', 'Smith', '123 Oak St', 'Seattle', 'Washington', 98101, 206, '555-0101', '2015-05-10', 75000, 'Professor'),    -- ID 1 (Joined long ago)
-('Maria', 'Garcia', '456 Pine Ave', 'New York', 'New York', 10001, 212, '555-0102', '2016-08-15', 68000, 'Instructor'), -- ID 2
-('Robert', 'Brown', '789 Maple Dr', 'Seattle', 'Washington', 98105, 206, '555-0103', '2024-03-20', 92000, 'Professor'),  -- ID 3 (Joined recently -> Small gap to tenure)
-('Linda', 'Davis', '321 Elm Ln', 'Austin', 'Texas', 73301, 512, '555-0104', '2018-11-01', 62000, 'Lecturer'),          -- ID 4
-('Michael', 'Miller', '654 Cedar Ct', 'Bellevue', 'Washington', 98004, 425, '555-0105', '2010-06-12', 105000, 'Dean'),    -- ID 5 (Joined long ago)
-('Tom', 'Hanks', '101 Castaway Dr', 'Seattle', 'Washington', 98109, 206, '555-9991', '2025-01-01', 45000, 'Lab Assistant'), -- ID 6 (Joined recently -> Small gap to tenure)
-('Jerry', 'Mouse', '202 Cheese Ln', 'Seattle', 'Washington', 98109, 206, '555-9992', '2020-05-15', 30000, 'Clerk'),        -- ID 7
-('Scooby', 'Doo', '303 Mystery Inc', 'Seattle', 'Washington', 98109, 206, '555-9993', '2022-08-20', 25000, 'Intern'),      -- ID 8
-('Shaggy', 'Rogers', '404 Van St', 'Bellevue', 'Washington', 98004, 425, '555-9994', '2013-02-10', 48000, 'Technician'), -- ID 9 (Joined long ago)
-('Tiny', 'Tim', '2 Poor Pl', 'Seattle', 'Washington', 98101, 206, '555-0200', '2023-12-01', 4000, 'Helper'),           -- ID 10
-('Penny', 'Worker', '1 Small St', 'Austin', 'Texas', 73301, 512, '555-0199', '2023-01-01', 15000, 'Intern');           -- ID 11
-
-
-
-
+('James', 'Smith', '123 Oak St', 'Seattle', 'Washington', 98101, 206, '555-0101', '2015-05-10', 75000, 'Professor'),    
+('Maria', 'Garcia', '456 Pine Ave', 'New York', 'New York', 10001, 212, '555-0102', '2016-08-15', 68000, 'Instructor'), 
+('Robert', 'Brown', '789 Maple Dr', 'Seattle', 'Washington', 98105, 206, '555-0103', '2024-03-20', 92000, 'Professor'),  
+('Linda', 'Davis', '321 Elm Ln', 'Austin', 'Texas', 73301, 512, '555-0104', '2018-11-01', 62000, 'Lecturer'),          
+('Michael', 'Miller', '654 Cedar Ct', 'Bellevue', 'Washington', 98004, 425, '555-0105', '2010-06-12', 105000, 'Dean'),    
+('Tom', 'Hanks', '101 Castaway Dr', 'Seattle', 'Washington', 98109, 206, '555-9991', '2025-01-01', 45000, 'Lab Assistant'), 
+('Jerry', 'Mouse', '202 Cheese Ln', 'Seattle', 'Washington', 98109, 206, '555-9992', '2020-05-15', 30000, 'Clerk'),        
+('Scooby', 'Doo', '303 Mystery Inc', 'Seattle', 'Washington', 98109, 206, '555-9993', '2022-08-20', 25000, 'Intern'),      
+('Shaggy', 'Rogers', '404 Van St', 'Bellevue', 'Washington', 98004, 425, '555-9994', '2013-02-10', 48000, 'Technician'), 
+('Tiny', 'Tim', '2 Poor Pl', 'Seattle', 'Washington', 98101, 206, '555-0200', '2023-12-01', 4000, 'Helper'),           
+('Penny', 'Worker', '1 Small St', 'Austin', 'Texas', 73301, 512, '555-0199', '2023-01-01', 15000, 'Intern');           
 
 INSERT INTO faculty (staffID, title, status, tenured) VALUES 
 (1, 'Dr.', 'Full Time', '2030-06-01'),
@@ -26,80 +22,44 @@ INSERT INTO faculty (staffID, title, status, tenured) VALUES
 (6, 'Mr.', 'Full Time', '2029-01-01'),
 (9, 'Mr.', 'Full Time', '2030-06-01');
 
-
-
-
-
 INSERT INTO categories (categoryDescription, departmentID) VALUES 
 ('Computer Science', 101), 
 ('Mathematics', 102),      
 ('Physics', 103),          
 ('Business Admin', 105);   
 
-
-
-
-
-
-
 INSERT INTO faculty_categories (staffID, categoryID) VALUES 
 (1, 1),
 (2, 1),
 (3, 2);
 
-
-
-
-
-
-
 INSERT INTO subjects (categoryID, subjectCode, subjectName) VALUES 
 (1, 101, 'Intro to Programming'), 
-(1, 202, 'Data Structures'),    
+(1, 202, 'Data Structures'),      
 (2, 301, 'Calculus I'),       
 (3, 401, 'General Physics'),  
 (4, 501, 'Marketing 101');    
-
-
-
-
-
 
 INSERT INTO faculty_subjects (staffID, subjectID, proficiencyRating) VALUES 
 (1, 1, 5), 
 (1, 2, 4), 
 (2, 1, 3), 
+(2, 2, 4), 
+(2,4,8),
+(8,2,4), 
+(8,5,7),
+(8,1,6),
 (3, 3, 5);
-
-
-
-
-
-
 
 INSERT INTO buildings (buildingName, numberofFloors) VALUES 
 ('Science Hall', 4),    
 ('Arts Center', 2),     
 ('Business Tower', 10); 
 
-
-
-
-
-
-
-
 INSERT INTO classrooms (buildingCode, phoneAvailable) VALUES 
 (1, 'Yes'), 
 (1, 'No'),  
 (2, 'Yes'); 
-
-
-
-
-
-
-
 
 INSERT INTO classes (subjectID, classroomID, startTime, duration) VALUES 
 (1, 1, '09:00:00', 60),  
@@ -108,20 +68,9 @@ INSERT INTO classes (subjectID, classroomID, startTime, duration) VALUES
 (4, 1, '13:00:00', 120), 
 (5, 3, '11:00:00', 60);  
 
-
-
-
-
-
-
 INSERT INTO faculty_classes (staffID, classID) VALUES 
 (1, 1),
 (3, 3);
-
-
-
-
-
 
 INSERT INTO students (studFirstName, studLastName, studStreetAddress, studCity, studState, studZipCode, studAreaCode, studPhoneNumber) VALUES 
 ('Alice', 'Johnson', '11 Apple Ln', 'Seattle', 'Washington', 98101, 206, '555-1111'),   
@@ -129,23 +78,14 @@ INSERT INTO students (studFirstName, studLastName, studStreetAddress, studCity, 
 ('Charlie', 'Brown', '33 Cherry Rd', 'Tacoma', 'Washington', 98402, 253, '555-3333'),   
 ('Dua', 'Lipa', '88 Music Ln', 'Austin', 'Texas', 73301, 512, '971-555-00');          
 
-
-
-
-
 INSERT INTO student_class_status (classDescription) VALUES 
 ('Enrolled'),  
 ('Withdrawn'), 
 ('Completed'); 
 
-
-
-
-
-
 INSERT INTO student_schedules (classID, studentID, classStatus, grade) VALUES 
 (1, 1, 1, 85), 
 (1, 2, 1, 65), 
-(1, 3, 1, 40); 
-
-
+(1, 3, 1, 40),
+(2, 1, 1, 90), 
+(3, 2, 1, 75);

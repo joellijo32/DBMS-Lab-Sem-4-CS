@@ -1,0 +1,4 @@
+SELECT staffID, COUNT(subjectID) AS "Subjects Count"
+FROM faculty_subjects
+GROUP BY staffID
+HAVING COUNT(subjectID) IN (2, 3);
