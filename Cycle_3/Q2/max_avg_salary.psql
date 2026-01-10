@@ -1,0 +1,5 @@
+SELECT position, AVG(salary) AS average_salary
+FROM staff
+GROUP BY position
+ORDER BY AVG(salary) DESC
+LIMIT 1;
