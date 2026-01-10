@@ -1,0 +1,5 @@
+SELECT classes.classid, subjects.subjectname, MIN(grade)
+FROM classes, student_schedules, subjects
+WHERE classes.classid = student_schedules.classid
+AND classes.subjectid = subjects.subjectid
+GROUP BY classes.classid, subjects.subjectname; 
