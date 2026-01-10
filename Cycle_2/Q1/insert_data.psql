@@ -1,155 +1,151 @@
-INSERT INTO staff
-(stffirstname, stflastname, stfstreetaddress, stfcity, stfstate,
- stfzipcode, stfareacode, stfphonenumber, joiningdate, salary, position)
-VALUES
-('Anil','Kumar','Street 1','Kochi','Kerala',682001,484,'9876543210','2016-01-10',45000,'Professor'),
-('Meera','Nair','Street 2','Trivandrum','Kerala',695001,471,'9876543211','2017-03-12',38000,'Lecturer'),
-('Ravi','Menon','Street 3','Calicut','Kerala',673001,495,'9876543212','2018-06-15',30000,'Assistant Professor'),
-('Suresh','Das','Street 4','Thrissur','Kerala',680001,487,'9876543213','2019-08-20',28000,'Lecturer'),
-('Neha','Singh','Street 5','Delhi','Delhi',110001,11,'9876543214','2015-02-01',52000,'Professor'),
-('Amit','Sharma','Street 6','Noida','Uttar Pradesh',201301,120,'9876543215','2016-09-11',47000,'Professor'),
-('Pooja','Verma','Street 7','Bhopal','Madhya Pradesh',462001,755,'9876543216','2017-12-25',34000,'Lecturer'),
-('Kiran','Patel','Street 8','Ahmedabad','Gujarat',380001,79,'9876543217','2018-04-18',29000,'Assistant Professor'),
-('Ramesh','Rao','Street 9','Bangalore','Karnataka',560001,80,'9876543218','2016-07-09',51000,'Professor'),
-('Divya','Iyer','Street 10','Chennai','Tamil Nadu',600001,44,'9876543219','2019-10-05',36000,'Lecturer'),
-('Sunil','Joshi','Street 11','Pune','Maharashtra',411001,20,'9876543220','2017-01-17',42000,'Assistant Professor'),
-('Anita','Roy','Street 12','Kolkata','West Bengal',700001,33,'9876543221','2018-11-30',39000,'Lecturer'),
-('Vikas','Malhotra','Street 13','Gurgaon','Haryana',122001,124,'9876543222','2015-05-14',55000,'Professor'),
-('Lakshmi','Menon','Street 14','Alappuzha','Kerala',688001,477,'9876543223','2020-02-02',27000,'Lecturer'),
-('Arun','Pillai','Street 15','Kottayam','Kerala',686001,481,'9876543224','2021-06-21',25000,'Teaching Assistant');
 
-INSERT INTO faculty (staffid, title, status, tenured)
-VALUES
-(1,'Prof.','Permanent','2030-01-01'),
-(2,'Dr.','Permanent','2029-03-01'),
-(3,'Dr.','Permanent','2028-06-01'),
-(4,'Mr.','Contract','2026-08-01'),
-(5,'Prof.','Permanent','2031-02-01'),
-(6,'Prof.','Permanent','2030-09-01'),
-(7,'Ms.','Contract','2027-12-01'),
-(8,'Dr.','Permanent','2028-04-01'),
-(9,'Prof.','Permanent','2031-07-01'),
-(10,'Ms.','Contract','2026-10-01'),
-(11,'Dr.','Permanent','2029-01-01'),
-(12,'Ms.','Contract','2027-11-01'),
-(13,'Prof.','Permanent','2032-05-01'),
-(14,'Ms.','Contract','2026-02-01'),
-(15,'Mr.','Contract','2025-06-01');
 
-INSERT INTO categories (categorydescription, departmentid)
-VALUES
-('Computer Science',101),
-('Electronics',102),
-('Mechanical',103),
-('Civil',104),
-('Electrical',105),
-('Information Technology',106),
-('Artificial Intelligence',107),
-('Data Science',108),
-('Robotics',109),
-('Physics',110),
-('Mathematics',111),
-('Chemistry',112),
-('Biotechnology',113),
-('Architecture',114),
-('Management',115);
+INSERT INTO STAFF (stfFirstName, stfLastName, stfStreetAddress, stfCity, stfState, stfZipCode, stfAreaCode, stfPhoneNumber, joiningDate, salary, position) VALUES 
+('James', 'Smith', '123 Oak St', 'Seattle', 'Washington', 98101, 206, '555-0101', '2015-05-10', 75000, 'Professor'),    -- ID 1 (Joined long ago)
+('Maria', 'Garcia', '456 Pine Ave', 'New York', 'New York', 10001, 212, '555-0102', '2016-08-15', 68000, 'Instructor'), -- ID 2
+('Robert', 'Brown', '789 Maple Dr', 'Seattle', 'Washington', 98105, 206, '555-0103', '2024-03-20', 92000, 'Professor'),  -- ID 3 (Joined recently -> Small gap to tenure)
+('Linda', 'Davis', '321 Elm Ln', 'Austin', 'Texas', 73301, 512, '555-0104', '2018-11-01', 62000, 'Lecturer'),          -- ID 4
+('Michael', 'Miller', '654 Cedar Ct', 'Bellevue', 'Washington', 98004, 425, '555-0105', '2010-06-12', 105000, 'Dean'),    -- ID 5 (Joined long ago)
+('Tom', 'Hanks', '101 Castaway Dr', 'Seattle', 'Washington', 98109, 206, '555-9991', '2025-01-01', 45000, 'Lab Assistant'), -- ID 6 (Joined recently -> Small gap to tenure)
+('Jerry', 'Mouse', '202 Cheese Ln', 'Seattle', 'Washington', 98109, 206, '555-9992', '2020-05-15', 30000, 'Clerk'),        -- ID 7
+('Scooby', 'Doo', '303 Mystery Inc', 'Seattle', 'Washington', 98109, 206, '555-9993', '2022-08-20', 25000, 'Intern'),      -- ID 8
+('Shaggy', 'Rogers', '404 Van St', 'Bellevue', 'Washington', 98004, 425, '555-9994', '2013-02-10', 48000, 'Technician'), -- ID 9 (Joined long ago)
+('Tiny', 'Tim', '2 Poor Pl', 'Seattle', 'Washington', 98101, 206, '555-0200', '2023-12-01', 4000, 'Helper'),           -- ID 10
+('Penny', 'Worker', '1 Small St', 'Austin', 'Texas', 73301, 512, '555-0199', '2023-01-01', 15000, 'Intern');           -- ID 11
 
-INSERT INTO subjects (categoryid, subjectcode, subjectname)
-VALUES
-(1,101,'Data Structures'),
-(1,102,'Operating Systems'),
-(2,201,'Digital Electronics'),
-(2,202,'VLSI Design'),
-(3,301,'Thermodynamics'),
-(4,401,'Structural Analysis'),
-(5,501,'Power Systems'),
-(6,601,'Web Technologies'),
-(7,701,'Machine Learning'),
-(8,801,'Big Data Analytics'),
-(9,901,'Industrial Robotics'),
-(10,1001,'Quantum Physics'),
-(11,1101,'Linear Algebra'),
-(12,1201,'Organic Chemistry'),
-(13,1301,'Genetic Engineering');
 
-INSERT INTO faculty_subjects (staffid, subjectid, proficiencyrating)
-VALUES
-(1,1,9),(2,2,8),(3,3,7),(4,4,6),(5,5,9),
-(6,6,8),(7,7,7),(8,8,8),(9,9,9),(10,10,6),
-(11,11,8),(12,12,7),(13,13,9),(14,14,6),(15,15,5);
 
-INSERT INTO buildings (buildingname, numberoffloors)
-VALUES
-('Computer Science Block',4),
-('Electronics Block',5),
-('Mechanical Block',3),
-('Civil Block',4),
-('Electrical Block',5),
-('IT Block',6),
-('AI Block',3),
-('Data Science Block',4),
-('Robotics Block',2),
-('Physics Block',3),
-('Mathematics Block',4),
-('Chemistry Block',3),
-('Biotechnology Block',2),
-('Architecture Block',5),
-('Management Block',4);
 
-INSERT INTO classrooms (buildingcode, phoneavailable)
-VALUES
-(1,false),(2,true),(3,false),(4,true),(5,false),
-(6,true),(7,true),(8,false),(9,true),(10,false),
-(11,true),(12,false),(13,true),(14,false),(15,true);
 
-INSERT INTO classes (subjectid, classroomid, starttime, duration)
-VALUES
-(1,1,'08:00:00',60),(2,2,'09:00:00',45),(3,3,'10:00:00',50),
-(4,4,'11:00:00',40),(5,5,'12:00:00',55),(6,6,'13:00:00',60),
-(7,7,'14:00:00',45),(8,8,'15:00:00',50),(9,9,'08:30:00',40),
-(10,10,'09:30:00',60),(11,11,'10:30:00',45),(12,12,'11:30:00',50),
-(13,13,'12:30:00',55),(14,14,'13:30:00',40),(15,15,'14:30:00',60);
+INSERT INTO faculty (staffID, title, status, tenured) VALUES 
+(1, 'Dr.', 'Full Time', '2030-06-01'),
+(2, 'Ms.', 'Full Time', NULL),
+(3, 'Dr.', 'Full Time', '2028-05-15'),
+(4, 'Mr.', 'Part Time', NULL),
+(5, 'Dr.', 'Full Time', '2028-08-20'),
+(6, 'Mr.', 'Full Time', '2029-01-01'),
+(9, 'Mr.', 'Full Time', '2030-06-01');
 
-INSERT INTO faculty_classes (staffid, classid)
-VALUES
-(1,1),(2,2),(3,3),(4,4),(5,5),
-(6,6),(7,7),(8,8),(9,9),(10,10),
-(11,11),(12,12),(13,13),(14,14),(15,15);
 
-INSERT INTO students
-(studfirstname, studlastname, studstreetaddress, studcity, studstate,
- studzipcode, studareacode, studphonenumber)
-VALUES
-('Rahul','Nair','S1','Kochi','Kerala',682001,484,'9786543210'),
-('Asha','Menon','S2','Trivandrum','Kerala',695001,471,'9786543211'),
-('Karthik','R','S3','Chennai','Tamil Nadu',600001,44,'9786543212'),
-('Neethu','P','S4','Calicut','Kerala',673001,495,'9786543213'),
-('Arjun','S','S5','Bangalore','Karnataka',560001,80,'9786543214'),
-('Sneha','M','S6','Pune','Maharashtra',411001,20,'9786543215'),
-('Vishal','K','S7','Delhi','Delhi',110001,11,'9786543216'),
-('Anu','T','S8','Thrissur','Kerala',680001,487,'9786543217'),
-('Rohit','G','S9','Noida','Uttar Pradesh',201301,120,'9786543218'),
-('Divya','I','S10','Chennai','Tamil Nadu',600001,44,'9786543219'),
-('Sanjay','R','S11','Kolkata','West Bengal',700001,33,'9786543220'),
-('Megha','J','S12','Bhopal','Madhya Pradesh',462001,755,'9786543221'),
-('Nikhil','P','S13','Kottayam','Kerala',686001,481,'9786543222'),
-('Pavithra','S','S14','Alappuzha','Kerala',688001,477,'9786543223'),
-('Akash','V','S15','Palakkad','Kerala',678001,491,'9786543224');
 
-INSERT INTO student_class_status (classdescription)
-VALUES
-('Enrolled'),('Completed'),('Dropped'),('On Hold'),('Failed'),
-('Passed'),('Re-Exam'),('Transferred'),('Suspended'),('Withdrawn'),
-('Completed with Distinction'),('Audit'),('Incomplete'),('Deferred'),('Repeat');
 
-INSERT INTO student_schedules (classid, studentid, classstatus, grade)
-VALUES
-(1,1,1,75),(2,2,2,68),(3,3,6,82),(4,4,1,55),(5,5,6,90),
-(6,6,1,60),(7,7,3,45),(8,8,6,88),(9,9,1,72),(10,10,2,65),
-(11,11,6,80),(12,12,1,70),(13,13,6,92),(14,14,4,50),(15,15,1,58);
 
-INSERT INTO faculty_categories (staffid, categoryid)
-VALUES
-(1,1),(2,2),(3,3),(4,4),(5,5),
-(6,6),(7,7),(8,8),(9,9),(10,10),
-(11,11),(12,12),(13,13),(14,14),(15,15);
+INSERT INTO categories (categoryDescription, departmentID) VALUES 
+('Computer Science', 101), 
+('Mathematics', 102),      
+('Physics', 103),          
+('Business Admin', 105);   
+
+
+
+
+
+
+
+INSERT INTO faculty_categories (staffID, categoryID) VALUES 
+(1, 1),
+(2, 1),
+(3, 2);
+
+
+
+
+
+
+
+INSERT INTO subjects (categoryID, subjectCode, subjectName) VALUES 
+(1, 101, 'Intro to Programming'), 
+(1, 202, 'Data Structures'),    
+(2, 301, 'Calculus I'),       
+(3, 401, 'General Physics'),  
+(4, 501, 'Marketing 101');    
+
+
+
+
+
+
+INSERT INTO faculty_subjects (staffID, subjectID, proficiencyRating) VALUES 
+(1, 1, 5), 
+(1, 2, 4), 
+(2, 1, 3), 
+(3, 3, 5);
+
+
+
+
+
+
+
+INSERT INTO buildings (buildingName, numberofFloors) VALUES 
+('Science Hall', 4),    
+('Arts Center', 2),     
+('Business Tower', 10); 
+
+
+
+
+
+
+
+
+INSERT INTO classrooms (buildingCode, phoneAvailable) VALUES 
+(1, 'Yes'), 
+(1, 'No'),  
+(2, 'Yes'); 
+
+
+
+
+
+
+
+
+INSERT INTO classes (subjectID, classroomID, startTime, duration) VALUES 
+(1, 1, '09:00:00', 60),  
+(2, 2, '10:30:00', 90),  
+(3, 3, '08:00:00', 150), 
+(4, 1, '13:00:00', 120), 
+(5, 3, '11:00:00', 60);  
+
+
+
+
+
+
+
+INSERT INTO faculty_classes (staffID, classID) VALUES 
+(1, 1),
+(3, 3);
+
+
+
+
+
+
+INSERT INTO students (studFirstName, studLastName, studStreetAddress, studCity, studState, studZipCode, studAreaCode, studPhoneNumber) VALUES 
+('Alice', 'Johnson', '11 Apple Ln', 'Seattle', 'Washington', 98101, 206, '555-1111'),   
+('Bob', 'Smith', '22 Berry St', 'Portland', 'Oregon', 97201, 503, '555-2222'),          
+('Charlie', 'Brown', '33 Cherry Rd', 'Tacoma', 'Washington', 98402, 253, '555-3333'),   
+('Dua', 'Lipa', '88 Music Ln', 'Austin', 'Texas', 73301, 512, '971-555-00');          
+
+
+
+
+
+INSERT INTO student_class_status (classDescription) VALUES 
+('Enrolled'),  
+('Withdrawn'), 
+('Completed'); 
+
+
+
+
+
+
+INSERT INTO student_schedules (classID, studentID, classStatus, grade) VALUES 
+(1, 1, 1, 85), 
+(1, 2, 1, 65), 
+(1, 3, 1, 40); 
+
+
