@@ -8,4 +8,9 @@ Lab Cycle Questions:-
 
 ![DBMS LAB CYCLE_page-0004](https://github.com/user-attachments/assets/467760d7-f797-45f1-b9f6-7eaa527bd472)
 
-....
+         
+Some Extra Question:
+    
+![Extra Question_page-0001](https://github.com/user-attachments/assets/7eeb925e-8cbc-4b91-a99d-5a11b75ecdcc)
+
+Cycle 1 - 3 Complete...
