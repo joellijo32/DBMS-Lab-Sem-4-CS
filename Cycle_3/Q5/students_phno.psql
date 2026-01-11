@@ -1,0 +1,3 @@
+SELECT studfirstname AS "First Name", studlastname AS "Last Name", studphonenumber AS "Phone Number"
+FROM students
+WHERE studphonenumber LIKE '97%' ;
