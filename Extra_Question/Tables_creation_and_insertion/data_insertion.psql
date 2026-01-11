@@ -25,4 +25,6 @@ INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) V
 ('Teen Charlie', 12, 'Male', 3, 'Son'),
 ('Grandpa Dave', 70, 'Male', 4, 'Father'),
 ('Baby Eve', 1, 'Female', 5, 'Daughter'), 
+('Daddy Eve', 68, 'Male', 5, 'Father'),
+('Mommy Eve', 66, 'Female', 5, 'Mother'),
 ('Partner Frank', 30, 'Others', 6, 'Spouse');
