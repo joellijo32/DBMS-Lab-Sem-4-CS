@@ -1,0 +1,28 @@
+TRUNCATE TABLE department, employee, dependent RESTART IDENTITY CASCADE;
+
+
+INSERT INTO department VALUES
+(101, 'HR', 'New York', 50000), 
+(102, 'IT', 'San Francisco', 100000), 
+(103, 'Sales', 'Chicago', 75000), 
+(104, 'Finance', 'Boston', 600000 ), 
+(105, 'Marketing', 'Austin', 450000) ;
+
+INSERT INTO employee (empid, empname, dob, city, doj, salary, deptid) VALUES
+(1, 'Alice', '1990-05-15', 'New York', '2022-01-10', 60000, 101), 
+(2, 'Bob', '1985-08-20', 'Chicago', '2021-03-15', 55000, 103), 
+(3, 'Charlie', '1992-12-01', 'San Francisco', '2022-06-20', 70000, 102),
+(4, 'David', '1988-07-30', 'Boston', '2023-01-05', 48000, 104),
+(5, 'Eve', '1995-02-14', 'Austin', '2020-11-01', 52000, 105),
+(6, 'Frank', '1991-04-25', 'San Francisco', '2022-08-15', 72000, 102);
+
+
+
+
+INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) VALUES 
+('Baby Alice', 3, 'Female', 1, 'Daughter'),
+('Little Bob', 5, 'Male', 2, 'Son'),
+('Teen Charlie', 12, 'Male', 3, 'Son'),
+('Grandpa Dave', 70, 'Male', 4, 'Father'),
+('Baby Eve', 1, 'Female', 5, 'Daughter'), 
+('Partner Frank', 30, 'Others', 6, 'Spouse');
