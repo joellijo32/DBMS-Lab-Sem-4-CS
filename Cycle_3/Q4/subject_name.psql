@@ -1,0 +1,3 @@
+SELECT subjectname 
+FROM subjects
+WHERE subjectname LIKE '%a%' ;
