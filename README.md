@@ -1,3 +1,9 @@
+To run the script directly from your terminal by specifying the filename:
+```bash
+psql -f your_filename.psql
+```
+
+    
 Lab Cycle Questions:-   
 
 ![DBMS LAB CYCLE_page-0001](https://github.com/user-attachments/assets/fa038737-89a4-45e8-8b48-f243a306ceb3)
