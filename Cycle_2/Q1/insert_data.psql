@@ -6,10 +6,13 @@ INSERT INTO STAFF (stfFirstName, stfLastName, stfStreetAddress, stfCity, stfStat
 ('Robert', 'Brown', '789 Maple Dr', 'Seattle', 'Washington', 98105, 206, '555-0103', '2024-03-20', 92000, 'Professor'),  
 ('Linda', 'Davis', '321 Elm Ln', 'Austin', 'Texas', 73301, 512, '555-0104', '2018-11-01', 62000, 'Lecturer'),          
 ('Michael', 'Miller', '654 Cedar Ct', 'Bellevue', 'Washington', 98004, 425, '555-0105', '2010-06-12', 105000, 'Dean'),    
-('Tom', 'Hanks', '101 Castaway Dr', 'Seattle', 'Washington', 98109, 206, '555-9991', '2025-01-01', 45000, 'Lab Assistant'), 
-('Jerry', 'Mouse', '202 Cheese Ln', 'Seattle', 'Washington', 98109, 206, '555-9992', '2020-05-15', 30000, 'Clerk'),        
+
+('Tom', 'Hanks', '101 Castaway Dr', 'Seattle', 'Texas', 98109, 206, '555-9991', '2025-01-01', 22000, 'Lab Assistant'), 
+
+('Jerry', 'Mouse', '202 Cheese Ln', 'Seattle', 'New York', 98109, 206, '555-9992', '2020-05-15', 18000, 'Clerk'),        
 ('Scooby', 'Doo', '303 Mystery Inc', 'Seattle', 'Washington', 98109, 206, '555-9993', '2022-08-20', 25000, 'Intern'),      
-('Shaggy', 'Rogers', '404 Van St', 'Bellevue', 'Washington', 98004, 425, '555-9994', '2013-02-10', 48000, 'Technician'), 
+
+('Shaggy', 'Rogers', '404 Van St', 'Bellevue', 'Texas', 98004, 425, '555-9994', '2013-02-10', 24000, 'Technician'), 
 ('Tiny', 'Tim', '2 Poor Pl', 'Seattle', 'Washington', 98101, 206, '555-0200', '2023-12-01', 4000, 'Helper'),           
 ('Penny', 'Worker', '1 Small St', 'Austin', 'Texas', 73301, 512, '555-0199', '2023-01-01', 15000, 'Intern');           
 

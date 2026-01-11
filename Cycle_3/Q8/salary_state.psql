@@ -1,0 +1,6 @@
+SELECT position, AVG(salary)
+FROM staff
+WHERE (stfstate = 'Texas' OR stfstate = 'New York')
+AND salary > 10000
+GROUP BY position
+HAVING AVG(salary) < 25000;
