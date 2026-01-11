@@ -1,0 +1,47 @@
+TRUNCATE TABLE department, employee, dependent RESTART IDENTITY CASCADE;
+
+
+INSERT INTO department VALUES
+(101, 'HR', 'New York', 50000), 
+(102, 'IT', 'San Francisco', 100000), 
+(103, 'Sales', 'Chicago', 75000), 
+(104, 'Finance', 'Boston', 600000 ), 
+(105, 'Marketing', 'Austin', 450000);
+
+
+INSERT INTO employee (empid, empname, dob, city, doj, salary, deptid) VALUES
+
+(1, 'Alice', '1990-05-15', 'New York', '2022-01-10', 60000, 103),
+(2, 'Bob', '1985-08-20', 'Chicago', '2021-03-15', 55000, 103),
+(4, 'David', '1988-07-30', 'Boston', '2023-01-05', 48000, 103),
+(5, 'Eve', '1995-02-14', 'Austin', '2020-11-01', 52000, 103),
+(11, 'Kevin', '1990-09-09', 'San Francisco', '2020-05-20', 80000, 103),
+(12, 'Liam', '1999-12-12', 'Chicago', '2023-04-01', 40000, 103),  
+(13, 'Mike', '1995-05-05', 'Chicago', '2023-06-01', 42000, 103),  
+(3, 'Charlie', '1992-12-01', 'San Francisco', '2022-06-20', 70000, 102), 
+(6, 'Frank', '1991-04-25', 'San Francisco', '2022-08-15', 72000, 102),   
+(7, 'George', '1993-07-12', 'San Francisco', '2023-02-01', 68000, 102),  
+(8, 'Hannah', '1996-11-30', 'San Francisco', '2023-03-10', 65000, 102),  
+(9, 'Ian', '1989-04-22', 'San Francisco', '2021-09-15', 75000, 102),  
+(10, 'Julia', '1994-01-18', 'San Francisco', '2022-12-01', 71000, 102);
+
+
+
+
+INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) VALUES 
+('Baby Alice', 3, 'Female', 1, 'Daughter'),
+('Little Bob', 5, 'Male', 2, 'Son'),
+('Teen Charlie', 12, 'Male', 3, 'Son'),
+('Grandpa Dave', 70, 'Male', 4, 'Father'),
+('Baby Eve', 1, 'Female', 5, 'Daughter'), 
+('Daddy Eve', 68, 'Male', 5, 'Father'),    
+('Mommy Eve', 66, 'Female', 5, 'Mother'),
+('Partner Frank', 30, 'Others', 6, 'Spouse'),
+('George Junior', 4, 'Male', 7, 'Son'),      
+('Hannahs Mom', 60, 'Female', 8, 'Mother'),
+('Ians Wife', 28, 'Female', 9, 'Spouse'),       
+('Julias Brother', 25, 'Male', 10, 'Brother'), 
+('Kevins Dad', 75, 'Male', 11, 'Father'),
+('Liams Son', 2, 'Male', 12, 'Son'),         
+('Liams Wife', 24, 'Female', 12, 'Spouse'),   
+('Mikes Cat', 5, 'Others', 13, 'Spouse');    
