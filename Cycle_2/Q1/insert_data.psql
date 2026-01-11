@@ -74,7 +74,7 @@ INSERT INTO faculty_classes (staffID, classID) VALUES
 
 INSERT INTO students (studFirstName, studLastName, studStreetAddress, studCity, studState, studZipCode, studAreaCode, studPhoneNumber) VALUES 
 ('Alice', 'Johnson', '11 Apple Ln', 'Seattle', 'Washington', 98101, 206, '6551111976'),   
-('Bob', 'Smith', '22 Berry St', 'Portland', 'Oregon', 97201, 503, '9752222201'),          
+('Bob', 'Smith', '22 Berry St', 'Portland', 'New York', 97201, 503, '9752222201'),          
 ('Charlie', 'Brown', '33 Cherry Rd', 'Tacoma', 'Washington', 98402, 253, '859333321'),   
 ('Woitiwe', 'Simson', '88 Music Ln', 'Austin', 'Texas', 73301, 512, '9715550044') ,           
 ('Ajo', 'Jose', '99 Berlin St' , 'Monaco', 'Texas', 54755, 201, '9763254826');
