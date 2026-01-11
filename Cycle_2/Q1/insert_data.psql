@@ -62,11 +62,11 @@ INSERT INTO classrooms (buildingCode, phoneAvailable) VALUES
 (2, 'Yes'); 
 
 INSERT INTO classes (subjectID, classroomID, startTime, duration) VALUES 
-(1, 1, '09:00:00', 60),  
-(2, 2, '10:30:00', 90),  
-(3, 3, '08:00:00', 150), 
-(4, 1, '13:00:00', 120), 
-(5, 3, '11:00:00', 60);  
+(1, 1, '09:00:00', 1),  
+(2, 2, '10:30:00', 2),  
+(3, 3, '08:00:00', 3), 
+(4, 1, '13:00:00', 5), 
+(5, 3, '11:00:00', 1);  
 
 INSERT INTO faculty_classes (staffID, classID) VALUES 
 (1, 1),

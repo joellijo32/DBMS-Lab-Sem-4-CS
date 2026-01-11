@@ -1,0 +1,4 @@
+SELECT classid, duration
+FROM classes
+GROUP BY classid
+HAVING MAX(duration) < 2; 

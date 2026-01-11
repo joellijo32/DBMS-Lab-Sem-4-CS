@@ -1,0 +1,6 @@
+SELECT subjectname, students.studentid, studfirstname, studlastname
+FROM students
+JOIN student_schedules ON students.studentid = student_schedules.studentid
+JOIN classes ON student_schedules.classid = classes.classid
+JOIN subjects ON classes.subjectid = subjects.subjectid
+ORDER BY subjects.subjectname , students.studentid ;
