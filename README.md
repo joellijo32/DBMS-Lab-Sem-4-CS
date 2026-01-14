@@ -8,6 +8,9 @@ psql -f your_filename.psql
     
 ![Extra Question_page-0001](https://github.com/user-attachments/assets/7eeb925e-8cbc-4b91-a99d-5a11b75ecdcc)
 
+![WhatsApp Image 2026-01-13 at 14 23 50](https://github.com/user-attachments/assets/84f8e90c-e0a9-4ba3-a098-b5607917da0c)
+
+
 
 ## Previous Archived Cycle (Completed till 3):    
 
