@@ -1,5 +1,5 @@
 # Database Management Systems Lab
-### To run the script directly from your terminal by specifying the filename:
+ To run the script directly from your terminal by specifying the filename:
 ```bash
 psql -f your_filename.psql
 ```
