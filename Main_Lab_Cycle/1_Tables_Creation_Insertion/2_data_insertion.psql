@@ -2,19 +2,19 @@ TRUNCATE TABLE department, employee, dependent RESTART IDENTITY CASCADE;
 
 
 INSERT INTO department VALUES
-(101, 'HR', 'Mumbai', 50000), 
-(102, 'IT', 'Bangalore', 100000), 
-(103, 'Sales', 'Delhi', 75000), 
-(104, 'Finance', 'Chennai', 600000), 
-(105, 'Marketing', 'Hyderabad', 450000);
+(101, 'HR', 'Mumbai', 100000), 
+(102, 'IT', 'Bangalore', 200000), 
+(103, 'Sales', 'Delhi', 300000), 
+(104, 'Finance', 'Chennai', 800000), 
+(105, 'Marketing', 'Hyderabad', 600000);
 
 
 INSERT INTO employee (empid, empname, dob, city, doj, salary, deptid) VALUES
-(1, 'Ananya', '1990-05-15', 'Mumbai', '2022-01-10', 60000, 103),
-(2, 'Balaji', '1985-08-20', 'Delhi', '2021-03-15', 55000, 103),
+(1, 'Ananya', '1990-05-15', 'Mumbai', '2022-01-10', 60000, 104),
+(2, 'Balaji', '1985-08-20', 'Delhi', '2021-03-15', 55000, 104),
 (3, 'Chirag', '1992-12-01', 'Bangalore', '2022-06-20', 70000, 102),
-(4, 'Dev', '1988-07-30', 'Chennai', '2023-01-05', 48000, 103),
-(5, 'Esha', '1995-02-14', 'Hyderabad', '2020-11-01', 52000, 103),
+(4, 'Dev', '1988-07-30', 'Chennai', '2023-01-05', 48000, 105),
+(5, 'Esha', '1995-02-14', 'Hyderabad', '2020-11-01', 52000, 105),
 (6, 'Farhan', '1991-04-25', 'Bangalore', '2022-08-15', 72000, 102),
 (7, 'Gaurav', '1993-07-12', 'Bangalore', '2023-02-01', 68000, 102),
 (8, 'Hina', '1996-11-30', 'Bangalore', '2023-03-10', 65000, 102),
