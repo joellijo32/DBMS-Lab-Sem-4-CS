@@ -1,0 +1,3 @@
+SELECT empid, department.deptid, city 
+FROM employee JOIN department ON city = location
+ORDER BY empid;
