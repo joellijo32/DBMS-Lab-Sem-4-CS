@@ -1,8 +1,8 @@
-CREATE VIEW bangalore_employees AS 
+CREATE VIEW bangalore_emp AS 
 SELECT * 
 FROM employee
 WHERE city = 'Bangalore';
 
 
 SELECT * 
-FROM bangalore_employees;
+FROM bangalore_emp;
