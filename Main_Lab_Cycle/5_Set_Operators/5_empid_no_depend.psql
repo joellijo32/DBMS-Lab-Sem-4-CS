@@ -1,0 +1,4 @@
+SELECT employee.empid
+FROM employee
+LEFT JOIN dependent ON employee.empid = dependent.empid
+WHERE dependent.empid IS NULL;
