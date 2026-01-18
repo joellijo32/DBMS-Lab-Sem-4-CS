@@ -1,3 +1,3 @@
-SELECT empid, empname, department.deptid, deptname, city
-FROM employee JOIN department ON city = location
-ORDER BY empid;
+SELECT city FROM employee
+INTERSECT 
+SELECT location FROM department; 
