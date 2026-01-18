@@ -1,0 +1,8 @@
+CREATE VIEW bangalore_employees AS 
+SELECT * 
+FROM employee
+WHERE city = 'Bangalore';
+
+
+SELECT * 
+FROM bangalore_employees;
