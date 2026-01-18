@@ -33,9 +33,9 @@ INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) V
 ('Little Bob', 5, 'Male', 2, 'Son'),
 ('Teen Charlie', 12, 'Male', 3, 'Son'),
 ('Grandpa Dave', 70, 'Male', 4, 'Father'),
-('Baby Eve', 1, 'Female', 5, 'Daughter'), 
-('Daddy Eve', 68, 'Male', 5, 'Father'),    
-('Mommy Eve', 66, 'Female', 5, 'Mother'),
+('Baby Eve', 1, 'Female', 5, 'Daughter'),
+('Eve', 68, 'Male', 5, 'Father'),    
+('Eve', 66, 'Female', 5, 'Mother'),
 ('Partner Frank', 30, 'Others', 6, 'Spouse'),
 ('George Junior', 4, 'Male', 7, 'Son'),      
 ('Hannahs Mom', 60, 'Female', 8, 'Mother'),
@@ -45,4 +45,5 @@ INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) V
 ('Liams Son', 2, 'Male', 12, 'Son'),         
 ('Liams Wife', 24, 'Female', 12, 'Spouse'),   
 ('Mikes Cat', 5, 'Others', 13, 'Spouse'),    
-('Steves Mom', 63, 'Female', 14, 'Mother');
+('Steve', 63, 'Female', 14, 'Mother'),
+('Steve', 19, 'Male', 14, 'Brother');
