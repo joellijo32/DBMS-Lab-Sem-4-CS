@@ -1,0 +1,3 @@
+SELECT employee.empid, empname, age, gender, relation_with_employee
+FROM employee JOIN dependent ON empname = dependname
+ORDER BY employee.empid;

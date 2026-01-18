@@ -45,5 +45,4 @@ INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) V
 ('Liams Son', 2, 'Male', 12, 'Son'),         
 ('Liams Wife', 24, 'Female', 12, 'Spouse'),   
 ('Mikes Cat', 5, 'Others', 13, 'Spouse'),    
-('Steve', 63, 'Female', 14, 'Mother'),
-('Steve', 19, 'Male', 14, 'Brother');
+('Steve', 63, 'Female', 14, 'Mother');
