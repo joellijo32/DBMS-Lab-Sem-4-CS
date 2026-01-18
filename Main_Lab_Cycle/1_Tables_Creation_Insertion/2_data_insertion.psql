@@ -24,8 +24,8 @@ INSERT INTO employee (empid, empname, dob, city, doj, salary, deptid) VALUES
 (11, 'Kevin', '1990-09-09', 'San Francisco', '2020-05-20', 80000, 103),
 (12, 'Liam', '1999-12-12', 'Chicago', '2023-04-01', 40000, 103),  
 (13, 'Mike', '1995-05-05', 'Chicago', '2023-06-01', 42000, 103),  
-(14, 'Steve', '1995-05-14', 'Washington', '2020-01-04', 81500, 101);
-
+(14, 'Steve', '1995-05-14', 'Washington', '2020-01-04', 81500, 101),
+(15, 'Alex', '1993-11-14', 'Boston', '2019-06-28', 48000,NULL);
 
 
 INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) VALUES 
