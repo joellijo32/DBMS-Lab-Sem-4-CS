@@ -10,7 +10,11 @@ psql -f your_filename.psql
 
 ![WhatsApp Image 2026-01-13 at 14 23 50](https://github.com/user-attachments/assets/84f8e90c-e0a9-4ba3-a098-b5607917da0c)
 
+![cycle 3_page-0001](https://github.com/user-attachments/assets/ccf0834e-fdeb-480c-9821-f0acbaf54529)    
 
+![cycle 3_page-0002](https://github.com/user-attachments/assets/a1e2ba85-5044-4cde-aa2c-e7b14b5e96d0)
+
+ 
 
 ## Previous Archived Cycle (Completed till 3):    
 
