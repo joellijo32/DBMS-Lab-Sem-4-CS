@@ -14,5 +14,5 @@ To run the script directly from your terminal by specifying the filename:
 ```bash
 psql -f your_filename.psql
 ```
-      
+                 
 Made by Joel Lijo Mathew.
