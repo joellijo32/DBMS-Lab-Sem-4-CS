@@ -5,11 +5,14 @@ PostgreSQL query solutions for the Database Management Systems lab (BTech CS).
 ```bash
 psql -f your_filename.psql
 ```
-       
+
+## Repository Structure
+
 DBMS-Lab-Sem-4-CS/
-├── Main_Lab_Cycle/           # Current cycle SQL scripts
-├── Archived_Cycles/          # Past cycle scripts
+├── Archived_Cycles/
+├── Main_Lab_Cycle/
 ├── .gitignore
 └── README.md
+
        
 Made by Joel Lijo Mathew.
