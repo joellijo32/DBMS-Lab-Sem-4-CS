@@ -8,11 +8,12 @@ psql -f your_filename.psql
 
 ## Repository Structure
 
+```
 DBMS-Lab-Sem-4-CS/
 ├── Archived_Cycles/
 ├── Main_Lab_Cycle/
 ├── .gitignore
 └── README.md
-
+```
        
 Made by Joel Lijo Mathew.
