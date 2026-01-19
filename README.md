@@ -12,6 +12,7 @@ DBMS-Lab-Sem-4-CS/
 ├── Archived_Cycles/
 ├── Main_Lab_Cycle/
 ├── .gitignore
+├── DBMS lab cycle .pdf
 └── README.md
 ```
 
