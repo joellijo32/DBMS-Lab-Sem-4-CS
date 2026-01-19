@@ -9,10 +9,10 @@ psql -f your_filename.psql
 ## Repository Structure
 ```
 DBMS-Lab-Sem-4-CS/
-├── Archived_Cycles/
-├── Main_Lab_Cycle/
+├── Archived_Cycles/      # Old lab cycle
+├── Main_Lab_Cycle/       # Current lab cycle
 ├── .gitignore
-├── DBMS lab cycle .pdf
+├── DBMS lab cycle .pdf   # Lab cycle questions
 └── README.md
 ```
 
