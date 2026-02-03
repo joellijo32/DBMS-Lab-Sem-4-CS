@@ -1,5 +1,5 @@
 # Database Management Systems Lab
-PostgreSQL query solutions for the Database Management Systems lab (BTech CS).       
+PostgreSQL query solutions for the Database Management Systems lab (BTech in CS).       
 
 To run the script directly from your terminal by specifying the filename:
 ```bash
