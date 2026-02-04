@@ -14,7 +14,7 @@ CREATE OR REPLACE FUNCTION back_emp()
 RETURNS TRIGGER AS $$
 BEGIN
 	INSERT INTO backup VALUES 
-	(NEW.empid, NEW.empname, NEW.dob, NEW.city, NEW.doj, NEW.salary, NEW.deptid);
+	(OLD.empid, OLD.empname, OLD.dob, OLD.city, OLD.doj, OLD.salary, OLD.deptid);
 END;
 $$ LANGUAGE plpgsql; 
 
