@@ -1,0 +1,1 @@
+SELECT * FROM DEPENDENT WHERE empid = 101 ORDER BY dependentname;

@@ -1,0 +1,1 @@
+SELECT empid FROM dependent WHERE age>6 ALLOW FILTERING; 
