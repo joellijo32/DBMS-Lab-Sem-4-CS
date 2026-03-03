@@ -3,7 +3,7 @@ PostgreSQL query solutions for the Database Management Systems lab (BTech in CS)
 
 To run the psql script directly from your terminal by specifying the filename:
 ```bash
-psql -f your_filename.psql
+psql -f your_filename.sql
 ```
 For cql (Cassandra) files (Cycle 6):
 ```bash
