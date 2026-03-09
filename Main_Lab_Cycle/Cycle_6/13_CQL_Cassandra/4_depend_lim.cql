@@ -1,1 +1,1 @@
-SELECT * FROM department LIMIT 1;
+SELECT * FROM dependent LIMIT 1;
