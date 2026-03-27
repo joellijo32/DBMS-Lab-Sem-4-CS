@@ -1,0 +1,2 @@
+ALTER TABLE dependent
+ALTER COLUMN age TYPE FLOAT;
