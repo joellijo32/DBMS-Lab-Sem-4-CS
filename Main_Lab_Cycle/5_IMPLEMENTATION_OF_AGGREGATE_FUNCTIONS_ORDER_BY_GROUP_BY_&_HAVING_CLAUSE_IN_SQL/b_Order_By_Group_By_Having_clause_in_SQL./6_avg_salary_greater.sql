@@ -1,5 +1,5 @@
-SELECT department.deptid, deptname, AVG(salary) AS average_salary
-FROM department
-JOIN employee ON department.deptid = employee.deptid
-GROUP BY department.deptname, department.deptid
-HAVING AVG(employee.salary) > 50000 ;
+SELECT d.deptid, deptname, AVG(salary) AS average_salary
+FROM department d
+JOIN employee e ON d.deptid = e.deptid
+GROUP BY d.deptname, d.deptid
+HAVING AVG(e.salary) > 50000 ;
