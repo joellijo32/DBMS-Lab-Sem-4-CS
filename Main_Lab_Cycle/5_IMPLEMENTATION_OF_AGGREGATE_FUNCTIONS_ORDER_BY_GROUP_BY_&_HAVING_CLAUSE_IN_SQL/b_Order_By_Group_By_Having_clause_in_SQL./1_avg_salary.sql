@@ -1,4 +1,4 @@
-SELECT department.deptid,department.deptname, AVG(salary) AS average_salary
-FROM employee, department
-WHERE employee.deptid = department.deptid
-GROUP BY department.deptid;
+SELECT d.deptid,d.deptname, AVG(salary) AS average_salary
+FROM employee e, department d
+WHERE e.deptid = d.deptid
+GROUP BY d.deptid;
