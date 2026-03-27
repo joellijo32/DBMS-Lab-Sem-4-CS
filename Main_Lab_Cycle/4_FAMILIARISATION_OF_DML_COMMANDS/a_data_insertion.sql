@@ -25,7 +25,13 @@ INSERT INTO employee (empid, empname, dob, city, doj, salary, deptid) VALUES
 (13, 'Manav', '1995-05-05', 'Delhi', '2023-06-01', 42000, 103),
 (14, 'Sanjay', '1995-05-14', 'Pune', '2020-01-04', 81500, 101),
 (15, 'Alok', '1993-11-14', 'Chennai', '2019-06-28', 48000, NULL),
-(16, 'Anita', '1994-01-18', 'Chennai', '2021-12-05', 60111, NULL);
+(16, 'Anita', '1994-01-18', 'Chennai', '2021-12-05', 60111, NULL),
+(17, 'Nikhil', '1992-03-10', 'Kannur', '2022-07-01', 50000, 101),
+(18, 'Rahul', '1991-06-21', 'Calicut', '2021-05-12', 52000, 102),
+(19, 'Sneha', '1996-09-18', 'Trivandrum', '2023-01-20', 48000, 103),
+(20, 'Arjun', '1994-11-05', 'Kannur', '2020-10-10', 55000, 104),
+(21, 'Meera', '1997-02-25', 'Calicut', '2022-03-15', 47000, 105),
+(22, 'Vivek', '1990-08-14', 'Trivandrum', '2019-12-01', 60000, 101);
 
 
 INSERT INTO dependent (dependname, age, gender, empid, relation_with_employee) VALUES 
