@@ -1,19 +1,3 @@
-DROP TABLE IF EXISTS 
-    buildings, 
-    categories, 
-    classes, 
-    classrooms, 
-    faculty, 
-    faculty_categories, 
-    faculty_classes, 
-    faculty_subjects, 
-    staff, 
-    student_class_status, 
-    student_schedules, 
-    students, 
-    subjects 
-CASCADE;
-
 
 CREATE TABLE department(
 	deptid INT PRIMARY KEY, 
