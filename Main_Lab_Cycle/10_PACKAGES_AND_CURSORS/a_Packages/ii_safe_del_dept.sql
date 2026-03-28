@@ -11,3 +11,8 @@ BEGIN
 	RAISE NOTICE 'Department deleted successfully';
 END;
 $$;
+
+
+CALL company_pkg.safe_delete_department(104);
+
+CALL company_pkg.safe_delete_department(101);
