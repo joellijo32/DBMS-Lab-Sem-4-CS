@@ -1,4 +1,4 @@
-SELECT employee.empid, empname, dependname, relation_with_employee
-FROM employee
-LEFT JOIN dependent ON employee.empid = dependent.empid 
-ORDER BY employee.empid ;
+SELECT e.empid, empname, dependname, relation_with_employee
+FROM employee e
+LEFT JOIN dependent d ON e.empid = d.empid 
+ORDER BY e.empid ;
