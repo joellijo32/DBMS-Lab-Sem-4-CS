@@ -1,4 +1,4 @@
-SELECT employee.empid, empname, relation_with_employee, age
-FROM employee
-JOIN dependent ON employee.empid = dependent.empid
+SELECT e.empid, empname, relation_with_employee, age
+FROM employee e
+JOIN dependent d ON e.empid = d.empid
 WHERE age > 18 ;
