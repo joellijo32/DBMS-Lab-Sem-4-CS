@@ -8,6 +8,6 @@ BEGIN
 END;
 $$;
 
-CALL company_pkg.add_employee(50, 'Woitiwe', '1998-05-10', 'Kochi', '2024-01-01', 45000, 101);
+CALL company_pkg.add_employee(50, 'Ganesh', '1998-05-10', 'Kochi', '2024-01-01', 45000, 101);
 
 SELECT * FROM employee WHERE empid=50;
