@@ -1,0 +1,1 @@
+CREATE USER testuser WITH PASSWORD '1234';
