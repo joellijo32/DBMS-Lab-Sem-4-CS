@@ -10,8 +10,8 @@ INSERT INTO department VALUES
 
 
 INSERT INTO employee (empid, empname, dob, city, doj, salary, deptid) VALUES
-(1, 'Ananya', '1990-05-15', 'Mumbai', '2022-01-10', 60000, 104),
-(2, 'Balaji', '1985-08-20', 'Delhi', '2021-03-15', 55000, 104),
+(1, 'Ananya', '1990-05-15', 'Mumbai', '2022-01-10', 60000, 101),
+(2, 'Balaji', '1985-08-20', 'Delhi', '2021-03-15', 55000, 101),
 (3, 'Chirag', '1992-12-01', 'Bangalore', '2022-06-20', 70000, 102),
 (4, 'Dev', '1988-07-30', 'Chennai', '2023-01-05', 48000, 105),
 (5, 'Esha', '1995-02-14', 'Hyderabad', '2020-11-01', 52000, 105),
@@ -29,7 +29,7 @@ INSERT INTO employee (empid, empname, dob, city, doj, salary, deptid) VALUES
 (17, 'Nikhil', '1992-03-10', 'Kannur', '2022-07-01', 50000, 101),
 (18, 'Rahul', '1991-06-21', 'Calicut', '2021-05-12', 52000, 102),
 (19, 'Sneha', '1996-09-18', 'Trivandrum', '2023-01-20', 48000, 103),
-(20, 'Arjun', '1994-11-05', 'Kannur', '2020-10-10', 55000, 104),
+(20, 'Arjun', '1994-11-05', 'Kannur', '2020-10-10', 55000, 105),
 (21, 'Meera', '1997-02-25', 'Calicut', '2022-03-15', 47000, 105),
 (22, 'Vivek', '1990-08-14', 'Trivandrum', '2019-12-01', 60000, 101);
 
