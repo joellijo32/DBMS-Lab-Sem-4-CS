@@ -1,4 +1,4 @@
 SELECT empid, empname, deptname
-FROM employee
-JOIN department ON employee.deptid = department.deptid
+FROM employee e
+JOIN department d ON e.deptid = d.deptid
 WHERE deptname = 'HR';
