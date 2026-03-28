@@ -14,3 +14,5 @@ BEGIN
 	RAISE NOTICE 'Employee transferred successfully';
 END;
 $$;
+
+CALL company_pkg.transfer_employee(3, 101);
