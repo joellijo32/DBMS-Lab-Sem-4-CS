@@ -1,3 +1,3 @@
-SELECT empid, empname, employee.deptid, deptname
-FROM employee 
-RIGHT JOIN department ON employee.deptid = department.deptid;
+SELECT empid, empname, e.deptid, deptname
+FROM employee e
+RIGHT JOIN department d ON e.deptid = d.deptid;
