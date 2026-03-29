@@ -1,8 +1,10 @@
-CREATE VIEW it_emp AS 
+CREATE VIEW it_emp AS
 SELECT empname
 FROM employee
-WHERE deptid = 102;
+WHERE deptid = (
+    SELECT deptid
+    FROM department
+    WHERE deptname = 'IT'
+);
 
-
-SELECT * 
-FROM it_emp;
+SELECT * FROM it_emp;
