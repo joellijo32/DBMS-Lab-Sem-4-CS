@@ -11,7 +11,7 @@ CREATE USER testuser WITH PASSWORD '1234';
 ## Step 2: Grant Privileges
 
 ```sql
-GRANT INSERT, UPDATE ON employee TO testuser;
+GRANT INSERT, UPDATE, SELECT ON employee TO testuser;
 ```
 
 ## Step 3: Switch to the user
