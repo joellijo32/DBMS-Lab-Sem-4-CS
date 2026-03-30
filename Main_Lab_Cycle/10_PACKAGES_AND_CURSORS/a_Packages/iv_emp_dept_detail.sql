@@ -5,8 +5,8 @@ DECLARE rec RECORD;
 BEGIN
     FOR rec IN
         SELECT e.EmpID, e.Empname, d.DeptName, e.Salary
-        FROM EMPLOYEE e
-        JOIN DEPARTMENT d
+        FROM employee e
+        JOIN department d
         ON e.DeptID = d.DeptID
     LOOP
         RAISE NOTICE 'EmpID: %, Name: %, Department: %, Salary: %',
