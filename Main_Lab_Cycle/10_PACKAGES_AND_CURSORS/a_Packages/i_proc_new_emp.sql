@@ -2,7 +2,7 @@ CREATE OR REPLACE PROCEDURE company_pkg.add_employee(p_EmpID INT, p_Ename VARCHA
 LANGUAGE plpgsql
 AS $$
 BEGIN
- 	INSERT INTO EMPLOYEE VALUES (p_EmpID, p_Ename, p_DOB, p_City, p_DOJ,
+ 	INSERT INTO employee VALUES (p_EmpID, p_Ename, p_DOB, p_City, p_DOJ,
 			             p_Salary, p_DeptID);
 	RAISE NOTICE 'Employee inserted successfully';
 END;
