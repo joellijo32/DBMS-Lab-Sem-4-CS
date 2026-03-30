@@ -1,6 +1,6 @@
 DO $$
 DECLARE emp_cursor CURSOR FOR
-	SELECT EmpID, Empname, Salary FROM EMPLOYEE WHERE DeptID = 101;
+	SELECT EmpID, Empname, Salary FROM employee WHERE DeptID = 101;
 	emp_record RECORD;
 BEGIN
 	OPEN emp_cursor;
